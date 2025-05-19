@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Dribbble, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Dribbble, ArrowUpRight, Facebook } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -20,10 +20,10 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const socialLinks = [
-  { icon: <Github className="h-5 w-5" />, href: "https://github.com/ahmadraza" },
-  { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com/in/ahmadraza" },
-  { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com/ahmadraza" },
-  { icon: <Dribbble className="h-5 w-5" />, href: "https://dribbble.com/ahmadraza" },
+  { icon: <Github className="h-5 w-5" />, href: "https://github.com/AhmadRazaKhan313" },
+  { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/ahmad-raza-khan300/" },
+  { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com/ahmadrazakhan130" },
+  { icon: <Facebook className="h-5 w-5" />, href: "https://www.facebook.com/profile.php?id=100004604288794" },
 ];
 
 export default function ContactSection() {
@@ -71,7 +71,7 @@ export default function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-light-gray">
+          <h2 className="text-3xl font-bold text-gradient">
             <span className="text-gradient font-mono">05.</span> Get In Touch
           </h2>
           <div className="h-[1px] flex-grow bg-gradient-to-r from-teal via-purple to-transparent opacity-30"></div>
@@ -119,7 +119,7 @@ export default function ContactSection() {
                     href="mailto:ahmad.raza@example.com" 
                     className="text-gray-400 hover:text-teal transition-colors duration-300 flex items-center gap-1 group"
                   >
-                    ahmad.raza@example.com
+                    ahmadrazakhan130@gmail.com
                     <ArrowUpRight className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                 </div>
@@ -141,7 +141,7 @@ export default function ContactSection() {
                     href="tel:+1234567890" 
                     className="text-gray-400 hover:text-purple transition-colors duration-300 flex items-center gap-1 group"
                   >
-                    +1 (234) 567-890
+                    +92 (306) 9595-036
                     <ArrowUpRight className="h-3.5 w-3.5 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                 </div>
@@ -160,7 +160,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="text-light-gray font-medium mb-1">Location</h4>
                   <p className="text-gray-400">
-                    San Francisco, CA
+                    Satellite Town Bahawalpur
                   </p>
                 </div>
               </motion.div>
