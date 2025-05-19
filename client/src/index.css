@@ -13,53 +13,61 @@
   --card-foreground: 20 14.3% 4.1%;
   --border: 20 5.9% 90%;
   --input: 20 5.9% 90%;
-  --primary: 216 79% 11%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 168 100% 69%;
-  --secondary-foreground: 220 75% 12%;
-  --accent: 351 100% 65%;
-  --accent-foreground: 0 0% 98%;
+  
+  /* Modern Portfolio Color Scheme */
+  --primary: 230 60% 10%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 175 84% 32%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 262 83% 58%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 20 14.3% 4.1%;
-  --radius: 0.5rem;
+  --ring: 230 60% 10%;
+  --radius: 0.75rem;
   
   /* Portfolio Specific Colors */
-  --navy: 216 79% 11%;
-  --teal: 168 100% 69%;
-  --coral: 351 100% 65%;
-  --light-gray: 220 6% 98%;
-  --dark-gray: 0 0% 20%;
+  --navy: 230 60% 10%;
+  --teal: 175 84% 32%;
+  --purple: 262 83% 58%;
+  --light-gray: 210 40% 98%;
+  --dark-gray: 220 14% 10%;
+  --gradient-start: 230 60% 10%;
+  --gradient-end: 262 83% 58%;
 }
 
 .dark {
-  --background: 216 79% 11%;
-  --foreground: 220 6% 98%;
-  --muted: 217 33% 17%;
+  --background: 230 60% 10%;
+  --foreground: 210 40% 98%;
+  --muted: 215 27% 16%;
   --muted-foreground: 215 20% 65%;
-  --popover: 216 79% 11%;
-  --popover-foreground: 220 6% 98%;
-  --card: 216 79% 11%;
-  --card-foreground: 220 6% 98%;
-  --border: 217 33% 17%;
-  --input: 217 33% 17%;
-  --primary: 216 79% 11%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 168 100% 69%;
-  --secondary-foreground: 220 75% 12%;
-  --accent: 351 100% 65%;
-  --accent-foreground: 0 0% 98%;
+  --popover: 230 60% 10%;
+  --popover-foreground: 210 40% 98%;
+  --card: 230 60% 10%;
+  --card-foreground: 210 40% 98%;
+  --border: 215 27% 16%;
+  --input: 215 27% 16%;
+  
+  /* Modern Portfolio Color Scheme */
+  --primary: 230 60% 10%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 175 84% 32%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 262 83% 58%;
+  --accent-foreground: 0 0% 100%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
   --ring: 215 20% 65%;
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   
   /* Portfolio Specific Colors */
-  --navy: 216 79% 11%;
-  --teal: 168 100% 69%;
-  --coral: 351 100% 65%;
-  --light-gray: 220 6% 98%;
-  --dark-gray: 0 0% 20%;
+  --navy: 230 60% 10%;
+  --teal: 175 84% 32%;
+  --purple: 262 83% 58%;
+  --light-gray: 210 40% 98%;
+  --dark-gray: 220 14% 10%;
+  --gradient-start: 230 60% 10%;
+  --gradient-end: 262 83% 58%;
 }
 
 @layer base {
@@ -128,41 +136,78 @@
 
 /* Color utility classes */
 .bg-navy {
-  background-color: #0A192F;
+  background-color: hsl(230, 60%, 10%);
 }
 
 .bg-teal {
-  background-color: #64FFDA;
+  background-color: hsl(175, 84%, 32%);
 }
 
-.bg-coral {
-  background-color: #FF4D5F;
+.bg-purple {
+  background-color: hsl(262, 83%, 58%);
 }
 
 .bg-light-gray {
-  background-color: #F8F9FA;
+  background-color: hsl(210, 40%, 98%);
 }
 
 .text-navy {
-  color: #0A192F;
+  color: hsl(230, 60%, 10%);
 }
 
 .text-teal {
-  color: #64FFDA;
+  color: hsl(175, 84%, 32%);
 }
 
-.text-coral {
-  color: #FF4D5F;
+.text-purple {
+  color: hsl(262, 83%, 58%);
 }
 
 .text-dark-gray {
-  color: #333333;
+  color: hsl(220, 14%, 10%);
 }
 
 .border-teal {
-  border-color: #64FFDA;
+  border-color: hsl(175, 84%, 32%);
 }
 
-.border-coral {
-  border-color: #FF4D5F;
+.border-purple {
+  border-color: hsl(262, 83%, 58%);
+}
+
+/* Modern gradients */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, hsl(230, 60%, 10%) 0%, hsl(262, 83%, 58%) 100%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, hsl(175, 84%, 32%) 0%, hsl(262, 83%, 58%) 100%);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, hsl(175, 84%, 32%) 0%, hsl(262, 83%, 58%) 100%);
+}
+
+/* Modern design elements */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-shadow {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.2);
 }
