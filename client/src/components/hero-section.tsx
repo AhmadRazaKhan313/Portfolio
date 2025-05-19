@@ -35,7 +35,7 @@ export default function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <span className="text-light-gray">Ahmad </span>
+              <span className="text-[#FFFFFF]">Ahmad </span>
               <span className="text-gradient">Raza</span>
             </motion.h1>
             
@@ -102,11 +102,11 @@ export default function HeroSection() {
               {/* Profile Image */}
               <div className="relative overflow-hidden rounded-xl shadow-2xl hover-lift">
                 <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500" 
+                <img 
+                    src="../Assets/images/Ahmad_bg.png" 
                     alt="Ahmad Raza - Web Developer" 
                     className="w-full h-full object-cover"
-                  />
+                />
                   <div className="absolute inset-0 bg-gradient-primary opacity-10"></div>
                 </div>
               </div>

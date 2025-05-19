@@ -83,7 +83,7 @@ export default function SkillsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-light-gray">
+          <h2 className="text-3xl font-bold text-gradient">
             <span className="text-gradient font-mono">03.</span> Technical Skills
           </h2>
           <div className="h-[1px] flex-grow bg-gradient-to-r from-teal via-purple to-transparent opacity-30"></div>
