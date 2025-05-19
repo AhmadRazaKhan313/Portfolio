@@ -24,8 +24,8 @@ export default function AboutSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-light-gray">
-            <span className="text-gradient font-mono">01.</span> About Me
+          <h2 className="text-3xl font-bold text-[#FFF]">
+            <span className="text-[#ffffff] font-mono">01.</span> About Me
           </h2>
           <div className="h-[1px] flex-grow bg-gradient-to-r from-teal to-transparent opacity-30"></div>
         </motion.div>
@@ -55,7 +55,7 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.4 }}
             >
-              <h3 className="text-light-gray font-medium mb-4 text-lg">Outside of work, I enjoy:</h3>
+              <h3 className="text-[#FFFFFF] font-medium mb-4 text-lg">Outside of work, I enjoy:</h3>
               <div className="flex flex-wrap gap-3">
                 {interests.map((interest, index) => (
                   <motion.div
@@ -66,7 +66,7 @@ export default function AboutSection() {
                     transition={{ duration: 0.3, delay: 0.5 + (index * 0.1) }}
                   >
                     <Badge variant="outline" className="py-3 px-4 text-light-gray border-teal border-opacity-30 hover-lift">
-                      <span className="flex items-center gap-2">
+                      <span className="flex items-center gap-2 text-[#FFFFFF]">
                         {interest.icon}
                         {interest.label}
                       </span>

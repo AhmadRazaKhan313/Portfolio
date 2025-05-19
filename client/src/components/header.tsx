@@ -58,7 +58,7 @@ export default function Header() {
                 <a 
                   key={link.href}
                   href={link.href}
-                  className="nav-link relative px-4 py-2 text-light-gray hover:text-teal transition-colors duration-300 rounded-full hover:bg-white hover:bg-opacity-5"
+                  className="text-gradient nav-link relative px-4 py-2 text-light-gray hover:text-teal transition-colors duration-300 rounded-full hover:bg-white hover:bg-opacity-5"
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
                   {link.label}
